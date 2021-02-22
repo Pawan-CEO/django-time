@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div>
+<h1>client</h1>
+{% if manage %}
+<table>
+<thead>
+<th>Eno</th>
+<th>Ename</th>
+<th>sal</th>
+<th>emp</th>
+</thead>
+<tbody>
+{% for m in manage %}
+<tr>
+<td>{{m.eno }} </td>
+<td>{{m.ename}}</td>
+<td>{{m.esal}}</td>
+<td>{{m.eaddr}}</td>
+
+</tr>
+{% endfor %}
+</table>
+{% else %}
+<p>NO data found</p>
+{% endif%}
+</div>
+</body>
+</html>
